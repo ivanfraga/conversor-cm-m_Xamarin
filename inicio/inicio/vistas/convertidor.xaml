@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inicio.vistas.convertidor">
+    <Grid BackgroundColor="#63DC64">
+        <StackLayout VerticalOptions="Center" Margin="20" Spacing="10">
+            <Image WidthRequest="200" Source="https://i.pinimg.com/originals/5c/10/40/5c10405c2f7186895061a4f9b7e39bf4.png"/>
+            <Frame HasShadow="False" CornerRadius="30">
+                <Entry Keyboard="Numeric" 
+                       Placeholder="Centímetros (cm)"
+                       TextColor="Black"
+                       PlaceholderColor="Black"
+                       FontSize="Large"
+                       x:Name="txtcm"
+                       />
+            </Frame>
+            <Button
+                Text="Calcular"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                x:Name="btnCalcular"
+                Clicked="btnCalcular_Clicked"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                <Label Text="0.0"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       x:Name="reslbl"/>
+            </StackLayout>
+            <Button Text="Regresar"
+                    TextTransform="None"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    CornerRadius="15"
+                    x:Name="btnVolver"
+                    Clicked="btnVolver_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

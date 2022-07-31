@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inicio.vistas.Page1"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#263238">
+        <Label Text="Conversor de Unidades"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#00AAE4"
+        />
+
+        <Frame VerticalOptions="FillAndExpand"
+                   Margin="20"
+                   CornerRadius="30"
+                   HasShadow="False">
+            <StackLayout VerticalOptions="Center">
+                <Image Source="https://i.pinimg.com/originals/de/c8/76/dec8766d6accdc1f489f84d32aa45e0d.png"/>
+                <Label Text=" De cm - m"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="45"/>
+                <Button
+                    Text="Empezar"
+                    Background="silver"
+                    CornerRadius="15"
+                    Clicked="Button_Clicked"
+                    />
+
+            </StackLayout>
+            </Frame>
+        </StackLayout>
+</ContentPage>
